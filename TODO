@@ -1,0 +1,26 @@
+API endpoints:
+
+GET /game/config - returns something similar to config.js
+GET /game/statistics
+GET /game/translations/:language
+GET /game/top/:amount - top x players
+
+GET /player - info about the currently logged in player, technologies researched
+GET /player/events
+POST /player/tech/upgrade - upgrade technologies
+GET /player/:id/profile
+
+GET /planet/:id - building levels, resources, fleet
+POST /planet/:id/build - build buildings, fleet, defense and so on
+GET /planet/:id/fleet
+POST /planet/:id/fleet/send
+GET /planet/:id/events
+
+GET /galaxy/:id/:solar_system - planet listing
+POST /search
+
+[alliance]
+
+GET /player/messages
+POST /player/messages/send
+GET /player/messages/thread/:id

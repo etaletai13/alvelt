@@ -1,0 +1,134 @@
+$background: #040E1E url('../images/background.jpg');
+$foreground: #E6EBFB;
+$ui-background: #344566;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: $background;
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-attachment: fixed;
+  color: $foreground;
+  font-size: 12px;
+  font-family: "SF Pro Display", "Helvetica Neue", Arial, sans-serif;
+}
+
+a {
+  color: $foreground;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* UI elements */
+
+.topBar {
+  border-bottom: 1px solid lighten($ui-background, 20);
+  background: $ui-background;
+  padding: 2px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+/* TODO: MAKE THIS PLAYABLE ON MOBILE FFS */
+.menu {
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+  width: 120px;
+  list-style-type: none;
+  position: fixed;
+  top: 40px;
+  left: 20px;
+}
+
+.menuItem {
+  background: $ui-background;
+  margin: 2px;
+  padding: 2px;
+  text-align: center;
+  border: 1px solid lighten($ui-background, 10);
+}
+
+.menuGroup {
+  background: darken($ui-background, 10);
+  border: 1px solid darken($ui-background, 5);
+}
+
+.main {
+  max-width: 700px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.resourceBar {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.resource {
+  display: inline-block;
+}
+
+.resource img {
+  display: inline-block;
+}
+
+/* Helper classes */
+
+.textCenter {
+  text-align: center;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.grid {
+  display: grid;
+}
+
+.bgDark {
+  background: darken($ui-background, 7);
+  border: 1px solid lighten($ui-background, 10);
+}
+
+.bgNormal {
+  background: $ui-background;
+  border: 1px solid lighten($ui-background, 10);
+}
+
+.tableBgNormal {
+  td, th {
+    background: $ui-background;
+    background-image: linear-gradient(#344566, #43577e);
+    border: 1px solid lighten($ui-background, 10);
+    vertical-align: top;
+    padding: 3px;
+    padding-bottom: 0;
+  }
+
+  margin: -1px;
+}
+
+.imageCell {
+  width: 120px;
+  vertical-align: middle;
+}
+
+.ui {
+  margin: 1px;
+  padding: 2px 4px;
+}
